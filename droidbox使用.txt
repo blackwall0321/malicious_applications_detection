@@ -1,0 +1,36 @@
+启动虚拟机：~/Android/sdk/android-sdk-linux/tools/emulator @iphone（一句命令就可以）
+
+~/Android/DroidBox_4.1.1路径下
+android AVD：打开avd管理平台
+自己新建模拟器（界面）可以设置参数
+
+
+
+~/Android/sdk/android-sdk-linux/tools/emulator @droidbox
+
+
+同理droidbox 也可以直接~/Android/D成都adb install 1.apk
+
+开始分析：./droidbox.sh 1.apk > 1.json  (当apk包和droidbox.sh在同一个文件夹下的时候，这个方法才起作用)
+
+./droidbox.sh  test_app/0d8597b2d96750ff01a2917d70248015025fbb2f.apk > test_txt/qqq.txt 10
+
+
+
+可以设置分析时间：./droidbox.sh 1.apk 10 (10表示10s)
+
+卸载 adb uninstall 包名（在它产生的json文件里面也有包名，可以直接读取）
+E: Package 'ia32-libs' has no installation candidate
+Note, selecting 'ia32-libs' for regex 'ia32-lib*'
+Note, selecting 'ia32-libs-dev' for regex 'ia32-lib*'
+
+
+
+
+启动虚拟机：./startemu.sh droidbox_android4.1.2
+
+安装要分析APK: adb install 1.apk
+
+开始分析：./droidbox.sh 1.apk
+
+可以设置分析时间：./droidbox.sh 1.apk 10 (10表示10s)

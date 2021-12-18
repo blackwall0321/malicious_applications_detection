@@ -1,0 +1,5 @@
+Windows10+GPU2070：pycharm （Machine Learning+CNN）TensorFlow
+反编译APK：APKTool
+静态分析APK：androguard
+攻击面分析：夜神模拟器+drozer
+动态分析：DroidBox（ubuntu）建议增加动态分析工具
